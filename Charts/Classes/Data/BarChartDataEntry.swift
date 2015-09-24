@@ -131,11 +131,12 @@ public class BarChartDataEntry: ChartDataEntry
     
     public override func copyWithZone(zone: NSZone) -> AnyObject
     {
-        let copy = super.copyWithZone(zone)
-        copy._values = _values
-        copy.value = value
-        copy._negativeSum = _negativeSum
-        return copy
+//        let copy = super.copyWithZone(zone)
+//        copy._values = _values
+//        copy.value = value
+//        copy._negativeSum = _negativeSum
+//        return copy
+        return super.copy()
     }
     
     /// Calculates the sum across all values of the given stack.
