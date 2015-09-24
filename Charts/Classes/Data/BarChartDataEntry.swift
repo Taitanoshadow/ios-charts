@@ -131,7 +131,7 @@ public class BarChartDataEntry: ChartDataEntry
     
     public override func copyWithZone(zone: NSZone) -> AnyObject
     {
-        let copy = super.copyWithZone(zone) as! BarChartDataEntry
+        let copy = super.copyWithZone(zone)
         copy._values = _values
         copy.value = value
         copy._negativeSum = _negativeSum
